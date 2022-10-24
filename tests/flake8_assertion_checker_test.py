@@ -1,6 +1,6 @@
 import ast
 from typing import Set
-from flake8_assertion_checker import Plugin
+from flake8_missing_assertion import Plugin
 
 
 def _results(code: str) -> Set[str]:
