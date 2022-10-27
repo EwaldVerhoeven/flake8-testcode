@@ -29,8 +29,8 @@ jobs:
           poetry version
       - name: Commit and push changes
         run:
-          git config --global user.name "Ewald Verhoeven" && 
-          git config --global user.email "my@email.com" &&
+          git config --global user.name "Ewald91" && 
+          git config --global user.email "ewaldverhoeven@hotmail.com" &&
           git status &&
           git add -A &&
           git commit -m "bump version" &&
