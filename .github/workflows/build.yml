@@ -1,4 +1,4 @@
-name: Code integration
+name: Code Quality checks
 
 on: [push]
 
