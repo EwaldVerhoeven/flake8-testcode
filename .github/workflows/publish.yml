@@ -34,7 +34,7 @@ jobs:
           pip install poetry
       - name: Get new version
         run: |
-          echo "new_version=$(poetry version ${{ github.event.inputs.type }} --dry-run -s)" >> $GITHUB_ENV
+          echo "new_version=$(poetry version ${{github.event.inputs.type}} --dry-run -s)" >> $GITHUB_ENV
       - name: output version
         run: echo ${env.new_version}
 
