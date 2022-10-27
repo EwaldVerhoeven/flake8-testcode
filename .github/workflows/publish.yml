@@ -41,7 +41,7 @@ jobs:
       - name: Get new version
         id: ver
         run: |
-          echo "new_version=$(poetry version ${{github.event.inputs.type}} --dry-run -s)" >> $GITHUB_OUT
+          echo "new_version=$(poetry version ${{github.event.inputs.type}} --dry-run -s)" >> $GITHUB_OUTPUT
       - name: output version
         run: echo ${{ steps.ver.outputs.version }}
 
