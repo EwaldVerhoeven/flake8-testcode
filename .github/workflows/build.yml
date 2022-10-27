@@ -24,6 +24,6 @@ jobs:
         run: poetry install
       - name: Run flake8
         run: |
-          poertry run flake8
+          poetry run flake8
       - name: Test
         run: poetry run pytest
