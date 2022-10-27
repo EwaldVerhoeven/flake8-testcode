@@ -1,4 +1,4 @@
-https://github.com/ewald91/flake8-testcode/actions/workflows/build.yml/badge.svg
+![testing](https://github.com/ewald91/flake8-testcode/actions/workflows/build.yml/badge.svg)
 ## flake8 codes
 
 | Code   | Description                          |
