@@ -4,6 +4,10 @@
 <!-- [![PyPi Version](https://img.shields.io/pypi/v/yt2mp3.svg)](https://pypi.python.org/pypi/yt2mp3/) -->
 <!-- [![Coveralls](https://img.shields.io/coveralls/jekyll/jekyll.svg?style=flat)]() -->
 
+## installation
+
+`pip install flake8-testcode`
+
 ## flake8 codes
 
 | Code   | Description                          |
@@ -11,10 +15,3 @@
 | TMA001 | Missing assertion in test definition |
 
 
-## Poetry
-
-enter virtual environment  (first time) 
-`poetry shell`
-
-re-enter virtual environment:
-`& ((poetry env info --path) + "\Scripts\activate.ps1")`
