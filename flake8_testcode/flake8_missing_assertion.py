@@ -43,8 +43,9 @@ class Visitor(ast.NodeVisitor):
 
 
 class Plugin:
-    name = __name__
-    version = importlib_metadata.version(__name__)
+    name = 'flake8-testcode'
+    version = importlib_metadata.version('flake8_testcode')
+    # version = '0.1.0'
 
     def __init__(self, tree: ast.AST) -> None:
         self._tree = tree

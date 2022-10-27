@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "flake8_testcode"
+version = "0.1.0"
+license = "MIT"
+description = "Plugin to catch bad style specific to testcode."
+readme = "README.md"
+authors = ["Ewald Verhoeven"]
+keywords = ["flake8", "testcode", "lint"]
+repository = "https://github.com/Ewald91/flake8-testcode"
+classifiers=[
+    "Framework :: Flake8",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[tool.poetry.plugins]
+[tool.poetry.plugins."flake8.extension"]
+TMA = "flake8_testcode:Plugin"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+flake8 = ">=3.8.4,<6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+twine = "^4.0.1"
+astpretty = "3.0.0"

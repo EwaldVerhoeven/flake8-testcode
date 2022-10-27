@@ -1,6 +1,10 @@
+# import sys
+# from pprint import pprint
+# pprint(sys.path)
+
 import ast
 from typing import Set
-from flake8_missing_assertion import Plugin
+from flake8_testcode import Plugin
 
 
 def _results(code: str) -> Set[str]:
