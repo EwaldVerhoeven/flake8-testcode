@@ -21,7 +21,7 @@ jobs:
     strategy:
       matrix:
         python-version: ["3.10"]
-        
+
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python-version }}
@@ -40,6 +40,8 @@ jobs:
         run: echo ${{ steps.ver.outputs.new_version }}
       - name : tag and push
         run: |
+          git config --global user.name "Ewald91" && 
+          git config --global user.email "ewaldverhoeven@hotmail.com" &&
           git tag -a v${{ steps.ver.outputs.new_version }} &&
           git push origin v${{ steps.ver.outputs.new_version }}
 
