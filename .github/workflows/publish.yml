@@ -42,7 +42,7 @@ jobs:
         run: |
           git config --global user.name "Ewald91" && 
           git config --global user.email "ewaldverhoeven@hotmail.com" &&
-          git tag -a v${{ steps.ver.outputs.new_version }} &&
+          git tag -a v${{ steps.ver.outputs.new_version }} -m "add tag by publish-pipeline"&&
           git push origin v${{ steps.ver.outputs.new_version }}
 
       # - name: Commit, tag and push changes
